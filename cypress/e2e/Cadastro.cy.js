@@ -16,6 +16,7 @@ describe('Teste E2E', () => {
     })
 
     it('Realizar validacao da conta corretamente', () => {
+      // Neste cenário, o correto seria desablitar a função de validação do código por e-mail.
       cy.get(':nth-child(1) > input').type("6")
       cy.get(':nth-child(2) > input').type("9")
       cy.get(':nth-child(3) > input').type("0")
